@@ -36,10 +36,15 @@ nav {
 article {
   margin-left: 80px;
   flex-grow: 1;
+  min-width: 550px;
 }
 h1 {
   font-weight: 600;
   font-size: 20px;
+}
+h2, h3 {
+  font-weight: 600;
+  font-size: 14px;
 }
 
 main {
@@ -49,14 +54,42 @@ main {
 
 .video-options {
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   align-items: center;
-  gap: 30px;
+  gap: 1.5rem;
 }
 
 .video-actions {
   display: flex;
-  flex-flow: row nowrap;
+  flex-direction: row;
+  gap: 0.5rem;
+  align-items: center;
+}
+.video-actions button {
+  height: 40px;
+  width: 159px;
+  border: none;
+  background-color: #CC0000;
+  border-radius: 3px;
+  color: white;
+  font-weight: 600;
+  font-size: 14px;
+  text-align: center;
+  cursor: pointer;
+}
+.video-actions span {
+  font-weight: 600;
+  font-size: 14px;
+}
+.video-actions span > b{
+  color: #515151;
+  font-weight: 400;
+}
+#video-description {
+  width: 550px;
+  font-weight: 400;
+  font-size: 14px;
+  color: #515151;
 }
 
 .embed {
@@ -87,8 +120,6 @@ aside{
 }
 .aside-text h3 {
   margin: 0;
-  font-weight: 600;
-  font-size: 14px;
 }
 .aside-text p {
   margin: 0;
